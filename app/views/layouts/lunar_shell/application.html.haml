@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title inthenight.net
+    = stylesheet_link_tag    'lunar_shell/application', media: 'all'
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'lunar_shell/application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+  %body
+    #moon= image_tag 'moon.png'
+    #title
+      %span inthenight.net
+    #stars1
+    #stars2
+    #stars3
+    = yield
+
