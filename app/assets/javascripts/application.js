@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require lunar_shell/application
 //= require_tree .
